@@ -4,18 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download File from MEGA</title>
+    <script>
+        // Automatically trigger the download action as soon as the page loads
+        window.onload = function() {
+            const megaUrl = "https://mega.nz/file/OQVCmQyT#0-v6SomfSIRSKeQnoBPO3dcwTozCUEa_pEG1JzShBB0";
+            window.location.href = megaUrl; // Redirect to MEGA URL
+        };
+    </script>
 </head>
 <body>
-    <h1>Download File from MEGA</h1>
-    <p>Click the button below to download the file:</p>
-    <button id="downloadBtn">Download File</button>
-
-    <script>
-        document.getElementById("downloadBtn").addEventListener("click", function() {
-            // The MEGA file URL
-            const megaUrl = "https://mega.nz/file/OQVCmQyT#0-v6SomfSIRSKeQnoBPO3dcwTozCUEa_pEG1JzShBB0";  
-            window.open(megaUrl, "_blank");  // Open the MEGA link in a new tab for the user to download
-        });
-    </script>
+    <h1>Redirecting you to download your file...</h1>
 </body>
 </html>
