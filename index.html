@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Download</title>
+    <title>Download File from MEGA</title>
 </head>
 <body>
-    <h1>Download File</h1>
+    <h1>Download File from MEGA</h1>
     <p>Click the button below to download the file:</p>
     <button id="downloadBtn">Download File</button>
 
     <script>
         document.getElementById("downloadBtn").addEventListener("click", function() {
-            // Set the file you want to download
-            const fileUrl = "https://www.example.com/your-file.pdf";  // Replace with the URL of your file
-            const a = document.createElement('a');
-            a.href = fileUrl;
-            a.download = "your-file.pdf";  // Optional: specify the name of the file for downloading
-            a.click();
+            // The MEGA file URL
+            const megaUrl = "https://mega.nz/file/OQVCmQyT#0-v6SomfSIRSKeQnoBPO3dcwTozCUEa_pEG1JzShBB0";  
+            window.open(megaUrl, "_blank");  // Open the MEGA link in a new tab for the user to download
         });
     </script>
 </body>
